@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace QM_BetterCompanions
+namespace QM_TweaksPack
 {
     public class ConfigDirectories
     {

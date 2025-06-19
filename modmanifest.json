@@ -1,0 +1,7 @@
+{
+  "UniqueModName": "ARZUMATA_QM_TweaksPack",
+  "Assemblies": [
+    "QM_TweaksPack.dll"
+  ],
+  "Dependencies": []
+}

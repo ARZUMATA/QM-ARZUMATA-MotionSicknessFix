@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace QM_BetterCompanions
+namespace QM_TweaksPack
 {
     public static class Plugin
     {
@@ -90,7 +90,7 @@ namespace QM_BetterCompanions
              * New MCM will have the support so gotta wait. */
 
             // Handle embedded config.ini
-            Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("QM_BetterCompanions.config.ini");
+            Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("QM_TweaksPack.config.ini");
             StreamReader reader = new StreamReader(stream);
 
             // Check MD5 of config.ini to determine if we need to replace with with new version.
@@ -130,7 +130,7 @@ namespace QM_BetterCompanions
         // MCM Related Start
         private static bool RegisterToMCM()
         {
-            ModConfigMenuAPI.RegisterModConfig("Better Companions", Plugin.ConfigPath, delegate (Dictionary<string, object> properties)
+            ModConfigMenuAPI.RegisterModConfig("Tweaks Pack", Plugin.ConfigPath, delegate (Dictionary<string, object> properties)
             {
                 Plugin.Config.LoadConfigMCM(properties);
             });

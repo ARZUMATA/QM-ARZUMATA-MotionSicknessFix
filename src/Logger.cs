@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace QM_BetterCompanions
+namespace QM_TweaksPack
 {
     /// <summary>
     /// A Unity Debug Logger that includes the assembly name.
