@@ -1,9 +1,9 @@
 ﻿using HarmonyLib;
 using MGSC;
 
-namespace QM_TweaksPack
+namespace QM_MotionSicknessFix
 {
-    internal partial class TweaksPackManager
+    internal partial class MotionSicknessFix
     {
         [HarmonyPatch(typeof(TravelSystem), "StartSpaceshipTravel")]
         public static class TravelSystem_StartSpaceshipTravel_Patch
@@ -12,11 +12,11 @@ namespace QM_TweaksPack
             {
                 if (Plugin.Config.CameraOrbitPlanetDisable == true)
                 {
-                    OrbitPlanetTweak.isBlockingCamera = false;
+                    isBlockingCamera = false;
 
-                    if (TweaksPackManager.spaceship != null)
+                    if (MotionSicknessFix.spaceship != null)
                     {
-                        TweaksPackManager.spaceship.DisableShipScreenCamera();
+                        MotionSicknessFix.spaceship.DisableShipScreenCamera();
                     }
                 }
 

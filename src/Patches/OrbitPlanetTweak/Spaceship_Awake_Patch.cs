@@ -1,9 +1,9 @@
 ﻿using HarmonyLib;
 using MGSC;
 
-namespace QM_TweaksPack
+namespace QM_MotionSicknessFix
 {
-    internal partial class TweaksPackManager
+    internal partial class MotionSicknessFix
     {
         [HarmonyPatch(typeof(Spaceship), "Awake")]
         public static class Spaceship_Awake_Patch
@@ -14,7 +14,7 @@ namespace QM_TweaksPack
                 {
                     //__instance.UpdatePosition = false; // Stops ship in space (other object slowly "drift" away, skybox static though)
 
-                    OrbitPlanetTweak.isBlockingCamera = true;
+                    isBlockingCamera = true;
                     if (__instance._cameraManager != null)
                     {
                         __instance._cameraManager.SetSpaceShipScreenCamera();

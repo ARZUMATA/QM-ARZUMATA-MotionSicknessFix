@@ -1,9 +1,9 @@
 ﻿using HarmonyLib;
 using MGSC;
 
-namespace QM_TweaksPack
+namespace QM_MotionSicknessFix
 {
-    internal partial class TweaksPackManager
+    internal partial class MotionSicknessFix
     {
         [HarmonyPatch(typeof(Spaceship), "TravelFinished")]
         public static class Spaceship_TravelFinished_Patch
@@ -12,7 +12,7 @@ namespace QM_TweaksPack
             {
                 if (Plugin.Config.CameraOrbitPlanetDisable == true)
                 {
-                    OrbitPlanetTweak.isBlockingCamera = true;
+                    isBlockingCamera = true;
                     __instance._cameraManager.SetSpaceShipScreenCamera();
                 }
             }
