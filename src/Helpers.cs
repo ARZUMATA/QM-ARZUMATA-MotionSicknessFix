@@ -1,7 +1,8 @@
 ﻿using System;
 using System.IO;
-using UnityEngine;
 using System.Security.Cryptography;
+using UnityEngine;
+using Random = System.Random;
 
 internal static class Helpers
 {
@@ -10,7 +11,10 @@ internal static class Helpers
         using (var md5 = MD5.Create())
         using (var stream = File.OpenRead(filePath))
         {
-            return BitConverter.ToString(md5.ComputeHash(stream)).Replace("-", "").ToLowerInvariant();
+            return BitConverter
+                .ToString(md5.ComputeHash(stream))
+                .Replace("-", "")
+                .ToLowerInvariant();
         }
     }
 
@@ -18,7 +22,10 @@ internal static class Helpers
     {
         using (var md5 = MD5.Create())
         {
-            return BitConverter.ToString(md5.ComputeHash(stream)).Replace("-", "").ToLowerInvariant();
+            return BitConverter
+                .ToString(md5.ComputeHash(stream))
+                .Replace("-", "")
+                .ToLowerInvariant();
         }
     }
 }
