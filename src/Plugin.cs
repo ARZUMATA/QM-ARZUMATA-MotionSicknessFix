@@ -126,7 +126,7 @@ namespace QM_MotionSicknessFix
         // MCM Related Start
         private static bool RegisterToMCM()
         {
-            ModConfigMenuAPI.RegisterModConfig("Tweaks Pack", Plugin.ConfigPath, delegate (Dictionary<string, object> properties)
+            ModConfigMenuAPI.RegisterModConfig("Motion Sickness Fix", Plugin.ConfigPath, delegate (Dictionary<string, object> properties)
             {
                 Plugin.Config.LoadConfigMCM(properties);
             });
