@@ -1,10 +1,6 @@
 ﻿using HarmonyLib;
 using MGSC;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QM_TweaksPack
 {
@@ -12,7 +8,7 @@ namespace QM_TweaksPack
     {
         // This one is needed too if enemy moves from view when you skip turn for example
         [HarmonyPatch(typeof(CreatureSystem), "IsSeeMonsters", new Type[] { typeof(Creatures), typeof(MapGrid) })]
-        internal class IsSeeMonsters_Patch
+        internal class CreatureSystem_IsSeeMonsters_Patch
         {
             [HarmonyPostfix]
             public static void Postfix(Creatures creatures, MapGrid mapGrid, ref bool __result)

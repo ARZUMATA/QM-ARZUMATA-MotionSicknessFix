@@ -1,17 +1,4 @@
-﻿using HarmonyLib;
-using MGSC;
-using System;
-using System.Collections.Generic;
-using System.Data.SqlTypes;
-using System.Reflection;
-using System.Runtime.Remoting.Metadata.W3cXsd2001;
-using TMPro;
-using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.Rendering.Universal;
-using UnityEngine.UI;
-using UnityEngine.Windows.Speech;
-using static MGSC.Localization;
+﻿using MGSC;
 
 namespace QM_TweaksPack
 {
