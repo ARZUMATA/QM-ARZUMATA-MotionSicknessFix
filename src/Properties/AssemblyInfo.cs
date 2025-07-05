@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("QM_TweaksPack")]
+[assembly: AssemblyTitle("QM_MotionSicknessFix")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("QM_TweaksPack")]
+[assembly: AssemblyProduct("QM_MotionSicknessFix")]
 [assembly: AssemblyCopyright("Copyright © 2025 ARZUMATA")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

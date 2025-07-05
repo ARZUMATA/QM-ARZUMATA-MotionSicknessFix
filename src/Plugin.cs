@@ -5,13 +5,9 @@ using QM_McmIniMerger;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
 
-namespace QM_TweaksPack
+namespace QM_MotionSicknessFix
 {
     public static class Plugin
     {
@@ -90,7 +86,7 @@ namespace QM_TweaksPack
              * New MCM will have the support so gotta wait. */
 
             // Handle embedded config.ini
-            Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("QM_TweaksPack.config.ini");
+            Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("QM_MotionSicknessFix.config.ini");
             StreamReader reader = new StreamReader(stream);
 
             // Check MD5 of config.ini to determine if we need to replace with with new version.

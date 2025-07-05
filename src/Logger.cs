@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace QM_TweaksPack
+namespace QM_MotionSicknessFix
 {
     /// <summary>
     /// A Unity Debug Logger that includes the assembly name.

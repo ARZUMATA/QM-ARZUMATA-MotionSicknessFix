@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace QM_TweaksPack
+namespace QM_MotionSicknessFix
 {
     public class ConfigDirectories
     {
