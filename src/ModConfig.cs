@@ -20,7 +20,10 @@ namespace QM_TweaksPack
         public bool DebugLog { get; set; } = false;
 
         [JsonIgnore]
-        public bool ModEnabled { get; set; } = true;
+        public bool CompanionsFollowFloors { get; set; } = true;
+
+        [JsonIgnore]
+        public bool CameraOrbitPlanet { get; set; } = true;
 
         // MCM Related Start
 
@@ -150,7 +153,6 @@ namespace QM_TweaksPack
             }
             else
             {
-
                 config = new ModConfig();
 
                 string json = JsonConvert.SerializeObject(config, serializerSettings);
