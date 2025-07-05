@@ -23,7 +23,19 @@ namespace QM_TweaksPack
         public bool CompanionsFollowFloors { get; set; } = true;
 
         [JsonIgnore]
-        public bool CameraOrbitPlanet { get; set; } = true;
+        public bool CameraOrbitPlanetDisable { get; set; } = true;
+
+        [JsonIgnore]
+        public string Date { get; set; }
+
+        [JsonIgnore]
+        public string Commit { get; set; }
+
+        [JsonIgnore]
+        public string About1 { get; set; }
+
+        [JsonIgnore]
+        public string About2 { get; set; }
 
         // MCM Related Start
 
