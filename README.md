@@ -34,3 +34,5 @@ Thanks to NBK_RedSpy, Crynano and all the people who make their code open source
 ## 1.0 (699c752)
 * Initial release
 
+## 1.1 (a8cb05a)
+* Fix: some flood in logs
